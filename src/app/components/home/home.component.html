@@ -1,0 +1,13 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">PelículasAPP</h1>
+        <p class="lead">Esta es una aplicación de búsqueda de películas.</p>
+        <p class="lead">Puedes leer la sinopsis y otros detalles de cualquier pelicula que quieras consultar..</p>
+    </div>
+</div>
+
+<div class="container">
+    <app-galeria titulo="Películas en cartelera" [peliculas]="cartelera | slice:0:6"></app-galeria>
+    <app-galeria titulo="Películas populares" [peliculas]="populares | slice:0:6"></app-galeria>
+    <app-galeria titulo="Películas para Niños" [peliculas]="popularesNinos | slice:0:6"></app-galeria>
+</div>
